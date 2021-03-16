@@ -1,7 +1,7 @@
 # Convert number to text-representation #
 
-Markup : - [x] Support English and Vietnamese
-         - [x] Can support up to 10^65 - 1(Vigintillion in english).
+- [x] Support English and Vietnamese
+- [x] Can support up to 10^65 - 1(Vigintillion in english).
 
 ## How to run ##
 
