@@ -1,6 +1,9 @@
 #include "../include/language/number_to_text.h"
 #include "../include/language/english/number_to_text_english.h"
 #include "../include/language/vietnam/number_to_text_vietnamese.h"
+#include "../include/language_factory.h"
+#include "../include/language.h"
+
 
 int check_number(const std::string &s) 
 {
@@ -26,9 +29,9 @@ int main()
 {
     std::string number;
     std::string option;
-    std::string language;
+    static std::string language;
     long long check_out_of_range;
-
+Language *Language, *l;
     while (true) {
         std::cout << "Input Number (type exit if want to stop)" << std::endl;
         std::cin >> number;
@@ -44,7 +47,9 @@ int main()
             std::transform(option.begin(), option.end(), option.begin(), [](char c){return std::tolower(c) ;});
         
             if (option.compare("yes") == 0) {
-                ConvertEnglish conv(check_number(number));
+                Language = LanguageFactory::createConnection(ENGLISH);
+                ConvertEnglish conv(check_number(number), Language);
+
                 std::cout << conv.convert_number_to_text(number) << std::endl;
                 break;
             } else if (option.compare("no") == 0) {

@@ -19,6 +19,10 @@ public:
     Convert();
     virtual std::string convert_number_to_text(const std::string &s) = 0;
     virtual std::string helper(std::string num) = 0;
+
+protected:
+    std::string triple_zero = {"000"};
+
 };
 
 #endif

@@ -42,6 +42,7 @@
         "sstream": "cpp",
         "streambuf": "cpp",
         "system_error": "cpp",
-        "ratio": "cpp"
+        "ratio": "cpp",
+        "list": "cpp"
     }
 }

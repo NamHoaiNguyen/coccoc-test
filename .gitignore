@@ -1,3 +1,4 @@
 *.cmake
+convert
 CMakeCache.txt
 CMakeFiles

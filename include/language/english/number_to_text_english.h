@@ -5,17 +5,21 @@
 #include <string>
 
 #include "../../language/number_to_text.h"
+#include "../../language.h"
 #include "math.h"
 
-class ConvertEnglish : public Convert {
+
+class ConvertEnglish  {
 
 private:
     int check_number;
+    Language *lang;
+    // Language *Language;
 
 public:
-    ConvertEnglish(int check_number);
-    std::string convert_number_to_text(const std::string &s) override;
-    std::string helper(std::string num) override;
+    ConvertEnglish(int check_number, Language *language);
+    std::string convert_number_to_text(const std::string &s);
+    std::string helper(std::string num) ;
     void convert_to_word(int n, std::string s);
 
     friend std::string operator% (std::string &a, int b);
@@ -29,4 +33,4 @@ public:
 
 };
 
-#endif
+#endif number_to_text_english
