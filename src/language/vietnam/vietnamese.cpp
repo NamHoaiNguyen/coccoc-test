@@ -35,3 +35,8 @@ std::string Vietnamese::get_hundred()
 {
     return " tram ";
 }
+
+std::string Vietnamese::get_negative()
+{
+    return "am ";
+}

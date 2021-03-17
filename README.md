@@ -1,7 +1,8 @@
 # Convert number to text-representation #
 
-- [x] Support English and Vietnamese
-- [x] Can support up to 10^65 - 1(Vigintillion in english).
+- [x] Support English and Vietnamese.
+- [x] Can support up to 10^65 - 1.
+- [x] Easily add new language(flexible design).
 
 ## How to run ##
 
@@ -9,4 +10,5 @@
 * Run make generating "convert" elf file.
 * Run elf file.
 
-
+## UML ##
+Format: ![UML diagram](uml.png)

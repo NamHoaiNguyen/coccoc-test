@@ -21,6 +21,7 @@ public:
     virtual std::string get_less_than_20(int num);
     virtual std::string get_thousands(int num);
     virtual std::string get_hundred();
+    virtual std::string get_negative();
 };
 
 #endif 

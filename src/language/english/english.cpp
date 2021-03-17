@@ -32,3 +32,8 @@ std::string English::get_hundred()
 {
     return " hundred ";
 }
+
+std::string English::get_negative()
+{
+    return "minus ";
+}

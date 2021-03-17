@@ -169,33 +169,6 @@ src/convert/number_to_text.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/convert/number_to_text.cpp.s
 .PHONY : src/convert/number_to_text.cpp.s
 
-src/convert/number_to_text_english.o: src/convert/number_to_text_english.cpp.o
-
-.PHONY : src/convert/number_to_text_english.o
-
-# target to build an object file
-src/convert/number_to_text_english.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/convert/number_to_text_english.cpp.o
-.PHONY : src/convert/number_to_text_english.cpp.o
-
-src/convert/number_to_text_english.i: src/convert/number_to_text_english.cpp.i
-
-.PHONY : src/convert/number_to_text_english.i
-
-# target to preprocess a source file
-src/convert/number_to_text_english.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/convert/number_to_text_english.cpp.i
-.PHONY : src/convert/number_to_text_english.cpp.i
-
-src/convert/number_to_text_english.s: src/convert/number_to_text_english.cpp.s
-
-.PHONY : src/convert/number_to_text_english.s
-
-# target to generate assembly for a file
-src/convert/number_to_text_english.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/convert/number_to_text_english.cpp.s
-.PHONY : src/convert/number_to_text_english.cpp.s
-
 src/factory/language_factory.o: src/factory/language_factory.cpp.o
 
 .PHONY : src/factory/language_factory.o
@@ -343,9 +316,6 @@ help:
 	@echo "... src/convert/number_to_text.o"
 	@echo "... src/convert/number_to_text.i"
 	@echo "... src/convert/number_to_text.s"
-	@echo "... src/convert/number_to_text_english.o"
-	@echo "... src/convert/number_to_text_english.i"
-	@echo "... src/convert/number_to_text_english.s"
 	@echo "... src/factory/language_factory.o"
 	@echo "... src/factory/language_factory.i"
 	@echo "... src/factory/language_factory.s"

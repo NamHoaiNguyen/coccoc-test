@@ -24,3 +24,8 @@ std::string Language::get_hundred()
 {
     return ("");
 }
+
+std::string Language::get_negative()
+{
+    return ("");
+}

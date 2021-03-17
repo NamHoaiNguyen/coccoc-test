@@ -17,6 +17,7 @@ public:
     virtual std::string get_less_than_20(int num) override;
     virtual std::string get_thousands(int num) override;
     virtual std::string get_hundred() override;
+    virtual std::string get_negative() override;
 };
 
 #endif

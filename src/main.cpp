@@ -1,6 +1,4 @@
 #include "../include/convert/number_to_text.h"
-#include "../include/convert/number_to_text_english.h"
-#include "../include/convert/number_to_text_vietnamese.h"
 #include "../include/factory/language_factory.h"
 #include "../include/language/language.h"
 
@@ -49,23 +47,26 @@ int main()
         
             if (option.compare("yes") == 0) {
                 Language = LanguageFactory::createConnection(ENGLISH);
-                ConvertEnglish conv(check_number(number), Language);
+                Convert conv(check_number(number), Language);
 
                 std::cout << conv.convert_number_to_text(number) << std::endl;
                 break;
             }else if (option.compare("no") == 0) {
-                std::cout << "Choosing language (vietnam)" << std::endl;
-                std::cin  >> language; 
+                while (true) {
+                    std::cout << "Choosing language (vietnam)" << std::endl;
+                    std::cin  >> language; 
                 
                 /*Lowercase*/
-                std::transform(language.begin(), language.end(), language.begin(), [](char c){return std::tolower(c) ;});
-                
-                if (language.compare("vietnam") == 0) {
-                    Language = LanguageFactory::createConnection(VIETNAMESE);
-                    ConvertEnglish conv(check_number(number), Language);
-
-                    std::cout << conv.convert_number_to_text(number) << std::endl;
-                    break;
+                    std::transform(language.begin(), language.end(), language.begin(), [](char c){return std::tolower(c) ;});
+                    if (language.compare("vietnam") == 0) {
+                        Language = LanguageFactory::createConnection(VIETNAMESE);
+                        Convert conv(check_number(number), Language);
+                        std::cout << conv.convert_number_to_text(number) << std::endl;
+                        break;
+                    }
+                    else {
+                        std::cout << "Please choose the language!!!" << std::endl;
+                    }
                 }
             } else {
                 std::cout << "Choose yes or no" << std::endl;
