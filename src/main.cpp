@@ -7,6 +7,7 @@
 int check_number(const std::string &s) 
 {
     std::string::const_iterator it;
+
     if (s.empty())  return NUMBER_EMPTY;
 
     if (std::find_if(s.begin(), s.end(), [](auto elem){return ((!std::isdigit(elem)));}) == s.end()) {
@@ -20,7 +21,6 @@ int check_number(const std::string &s)
             return NOT_NUMBER;
         }
     }
-
     return NUMBER_NEGATIVE;
 }
 
@@ -28,22 +28,18 @@ void get_input()
 {
     std::string number;
     std::string option;
-    static std::string language;
+    std::string language;
     Language *Language;
-    int n;
 
     while (true) {
         std::cout << "Input Number (type exit if want to stop)" << std::endl;
 
         std::getline(std::cin >> std::ws, number);
 
-
         if (number.compare("exit") == 0) {
             std::cout << "Exit" << std::endl;
             break;
         }
-
-        std::cout << number << std::endl;
 
         while(true) {
             std::cout << "Use Default Language(English) ? (yes or no)" << std::endl;
@@ -64,6 +60,7 @@ void get_input()
                 
                     /*Lowercase*/
                     std::transform(language.begin(), language.end(), language.begin(), [](char c){return std::tolower(c) ;});
+                    
                     if (language.compare("vietnam") == 0) {
                         Language = LanguageFactory::createConnection(VIETNAMESE);
                         Convert conv(check_number(number), Language);
