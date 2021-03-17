@@ -42,3 +42,8 @@ std::string English::get_hyphen()
 {
     return "-";
 }
+
+std::string English::get_zero()
+{
+    return "zero";
+}

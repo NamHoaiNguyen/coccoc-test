@@ -2,6 +2,7 @@
 #include "../include/factory/language_factory.h"
 #include "../include/language/language.h"
 
+#include <memory>
 #include <string>
 
 int check_number(const std::string &s) 
@@ -29,7 +30,7 @@ void get_input()
     std::string number;
     std::string option;
     std::string language;
-    Language *Language;
+    std::shared_ptr<Language>Language;
 
     while (true) {
         std::cout << "Input Number (type exit if want to stop)" << std::endl;
@@ -81,7 +82,6 @@ void get_input()
 
 int main()
 {
-    
     get_input();
     return 0;
 }

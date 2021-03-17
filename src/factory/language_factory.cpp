@@ -2,24 +2,24 @@
  
 #include <iostream>
 
-Language* LanguageFactory::createConnection(eConnectionType connectionType)
+
+std::shared_ptr<Language>LanguageFactory::createConnection(eConnectionType connectionType)
 {
-    Language *language = nullptr;
- 
+    std::shared_ptr<Language> language;
     switch (connectionType)
     {
     case ENGLISH:
     {
-        language = new English();
+        language = std::make_shared<English>();
         break;
     }
     case VIETNAMESE:
     {
-        language = new Vietnamese();
+        language = std::make_shared<Vietnamese>();
         break;
     }
     default:
-        language = new English(); // default is language
+        language = std::make_shared<English>(); // default is english
         break;
     }
  

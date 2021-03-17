@@ -45,3 +45,8 @@ std::string Vietnamese::get_hyphen()
 {
     return " ";
 }
+
+std::string Vietnamese::get_zero()
+{
+    return "khong";
+}

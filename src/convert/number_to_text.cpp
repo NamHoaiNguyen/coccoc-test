@@ -1,6 +1,6 @@
 #include "../../include/convert/number_to_text.h"
 
-Convert::Convert(int check_number, Language *language) : check_number{check_number}, lang{language}
+Convert::Convert(int check_number, std::shared_ptr<Language>language) : check_number{check_number}, lang{language}
 {
 
 }
@@ -90,7 +90,7 @@ std::string Convert::convert_number_to_text(std::string num)
     int i = 0;
     std::string res= "";
 
-    if(num == 0) return "zero";
+    if(num == 0) return lang->get_zero();
 
     if (this->check_number == NUMBER_EMPTY) 
         return "String Empty";

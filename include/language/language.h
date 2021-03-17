@@ -24,6 +24,8 @@ public:
     virtual std::string get_hundred();
     virtual std::string get_negative();
     virtual std::string get_hyphen();
+    virtual std::string get_zero();
+
 };
 
 #endif 

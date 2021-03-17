@@ -2,6 +2,7 @@
 #define number_to_text_english
 
 #include <algorithm>
+#include <memory>
 #include <string>
 
 #include "../language/language.h"
@@ -16,11 +17,10 @@ class Convert  {
 
 private:
     int check_number;
-    Language *lang;
-    // Language *Language;
+    std::shared_ptr<Language>lang;
 
 public:
-    Convert(int check_number, Language *language);
+    Convert(int check_number, std::shared_ptr<Language>language);
     std::string convert_number_to_text(std::string s);
     std::string helper(std::string num) ;
 

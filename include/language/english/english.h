@@ -20,6 +20,7 @@ public:
     virtual std::string get_hundred() override;
     virtual std::string get_negative() override;
     virtual std::string get_hyphen() override;
+    virtual std::string get_zero() override;
 };
 
 #endif

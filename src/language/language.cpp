@@ -36,3 +36,8 @@ std::string Language::get_hyphen()
 {
     return ("");
 }
+
+std::string Language::get_zero()
+{
+    return ("");
+}
