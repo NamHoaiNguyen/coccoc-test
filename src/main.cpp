@@ -2,6 +2,8 @@
 #include "../include/factory/language_factory.h"
 #include "../include/language/language.h"
 
+#include <string>
+
 int check_number(const std::string &s) 
 {
     std::string::const_iterator it;
@@ -14,7 +16,7 @@ int check_number(const std::string &s)
     it = s.begin();
     if (s[0] == '-') it++;
     for (; it != s.end(); it++) {
-        if (!std::isdigit(*it)) {
+        if (!std::isdigit(*it) || std::isspace(*it)) {
             return NOT_NUMBER;
         }
     }
@@ -22,21 +24,26 @@ int check_number(const std::string &s)
     return NUMBER_NEGATIVE;
 }
 
-int main()
+void get_input()
 {
     std::string number;
     std::string option;
     static std::string language;
     Language *Language;
-    
+    int n;
+
     while (true) {
         std::cout << "Input Number (type exit if want to stop)" << std::endl;
-        std::cin >> number;
+
+        std::getline(std::cin >> std::ws, number);
+
 
         if (number.compare("exit") == 0) {
             std::cout << "Exit" << std::endl;
             break;
         }
+
+        std::cout << number << std::endl;
 
         while(true) {
             std::cout << "Use Default Language(English) ? (yes or no)" << std::endl;
@@ -48,15 +55,14 @@ int main()
             if (option.compare("yes") == 0) {
                 Language = LanguageFactory::createConnection(ENGLISH);
                 Convert conv(check_number(number), Language);
-
                 std::cout << conv.convert_number_to_text(number) << std::endl;
                 break;
-            }else if (option.compare("no") == 0) {
+            } else if (option.compare("no") == 0) {
                 while (true) {
                     std::cout << "Choosing language (vietnam)" << std::endl;
                     std::cin  >> language; 
                 
-                /*Lowercase*/
+                    /*Lowercase*/
                     std::transform(language.begin(), language.end(), language.begin(), [](char c){return std::tolower(c) ;});
                     if (language.compare("vietnam") == 0) {
                         Language = LanguageFactory::createConnection(VIETNAMESE);
@@ -68,11 +74,17 @@ int main()
                         std::cout << "Please choose the language!!!" << std::endl;
                     }
                 }
+                break;
             } else {
                 std::cout << "Choose yes or no" << std::endl;
             }
         }
     }
+}
 
+int main()
+{
+    
+    get_input();
     return 0;
 }

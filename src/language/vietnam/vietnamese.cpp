@@ -12,7 +12,7 @@ Vietnamese::Vietnamese()
     thousands_vie = { "", "nghin", "trieu", "ti", "tram ti", "nghin ti", "trieu ti", "ti ti",
                     "tram ti ti", "nghin ti ti", "trieu ti ti", "ti ti ti", "tram ti ti ti",
                     "nghin ti ti ti", "trieu ti ti ti", "ti ti ti ti", "tram ti ti ti ti",
-                    "nghin ti ti ti ti", "trieu ti ti ti ti", "ti ti ti ti ti", 
+                    "nghin ti ti ti ti", "trieu ti ti ti ti", "ti ti ti ti ti",
                     "tram ti ti ti ti ti"};                                     
 }
 
@@ -39,4 +39,9 @@ std::string Vietnamese::get_hundred()
 std::string Vietnamese::get_negative()
 {
     return "am ";
+}
+
+std::string Vietnamese::get_hyphen()
+{
+    return " ";
 }

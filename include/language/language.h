@@ -15,6 +15,7 @@ class Language
 {
 
 public:
+    static std::string triple_zero; 
     Language();
 
     virtual std::string get_tens(int num);
@@ -22,6 +23,7 @@ public:
     virtual std::string get_thousands(int num);
     virtual std::string get_hundred();
     virtual std::string get_negative();
+    virtual std::string get_hyphen();
 };
 
 #endif 

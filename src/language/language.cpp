@@ -1,5 +1,7 @@
 #include "../../include/language/language.h"
 
+std::string Language::triple_zero = {"000"};
+
 Language::Language()
 {
 
@@ -26,6 +28,11 @@ std::string Language::get_hundred()
 }
 
 std::string Language::get_negative()
+{
+    return ("");
+}
+
+std::string Language::get_hyphen()
 {
     return ("");
 }

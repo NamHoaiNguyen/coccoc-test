@@ -37,3 +37,8 @@ std::string English::get_negative()
 {
     return "minus ";
 }
+
+std::string English::get_hyphen()
+{
+    return "-";
+}
