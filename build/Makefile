@@ -142,32 +142,86 @@ convert/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/build
 .PHONY : convert/fast
 
-src/language.o: src/language.cpp.o
+src/convert/number_to_text.o: src/convert/number_to_text.cpp.o
 
-.PHONY : src/language.o
+.PHONY : src/convert/number_to_text.o
 
 # target to build an object file
-src/language.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/language.cpp.o
-.PHONY : src/language.cpp.o
+src/convert/number_to_text.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/convert/number_to_text.cpp.o
+.PHONY : src/convert/number_to_text.cpp.o
 
-src/language.i: src/language.cpp.i
+src/convert/number_to_text.i: src/convert/number_to_text.cpp.i
 
-.PHONY : src/language.i
+.PHONY : src/convert/number_to_text.i
 
 # target to preprocess a source file
-src/language.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/language.cpp.i
-.PHONY : src/language.cpp.i
+src/convert/number_to_text.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/convert/number_to_text.cpp.i
+.PHONY : src/convert/number_to_text.cpp.i
 
-src/language.s: src/language.cpp.s
+src/convert/number_to_text.s: src/convert/number_to_text.cpp.s
 
-.PHONY : src/language.s
+.PHONY : src/convert/number_to_text.s
 
 # target to generate assembly for a file
-src/language.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/language.cpp.s
-.PHONY : src/language.cpp.s
+src/convert/number_to_text.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/convert/number_to_text.cpp.s
+.PHONY : src/convert/number_to_text.cpp.s
+
+src/convert/number_to_text_english.o: src/convert/number_to_text_english.cpp.o
+
+.PHONY : src/convert/number_to_text_english.o
+
+# target to build an object file
+src/convert/number_to_text_english.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/convert/number_to_text_english.cpp.o
+.PHONY : src/convert/number_to_text_english.cpp.o
+
+src/convert/number_to_text_english.i: src/convert/number_to_text_english.cpp.i
+
+.PHONY : src/convert/number_to_text_english.i
+
+# target to preprocess a source file
+src/convert/number_to_text_english.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/convert/number_to_text_english.cpp.i
+.PHONY : src/convert/number_to_text_english.cpp.i
+
+src/convert/number_to_text_english.s: src/convert/number_to_text_english.cpp.s
+
+.PHONY : src/convert/number_to_text_english.s
+
+# target to generate assembly for a file
+src/convert/number_to_text_english.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/convert/number_to_text_english.cpp.s
+.PHONY : src/convert/number_to_text_english.cpp.s
+
+src/factory/language_factory.o: src/factory/language_factory.cpp.o
+
+.PHONY : src/factory/language_factory.o
+
+# target to build an object file
+src/factory/language_factory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/factory/language_factory.cpp.o
+.PHONY : src/factory/language_factory.cpp.o
+
+src/factory/language_factory.i: src/factory/language_factory.cpp.i
+
+.PHONY : src/factory/language_factory.i
+
+# target to preprocess a source file
+src/factory/language_factory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/factory/language_factory.cpp.i
+.PHONY : src/factory/language_factory.cpp.i
+
+src/factory/language_factory.s: src/factory/language_factory.cpp.s
+
+.PHONY : src/factory/language_factory.s
+
+# target to generate assembly for a file
+src/factory/language_factory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/factory/language_factory.cpp.s
+.PHONY : src/factory/language_factory.cpp.s
 
 src/language/english/english.o: src/language/english/english.cpp.o
 
@@ -196,86 +250,59 @@ src/language/english/english.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/language/english/english.cpp.s
 .PHONY : src/language/english/english.cpp.s
 
-src/language/english/number_to_text_english.o: src/language/english/number_to_text_english.cpp.o
+src/language/language.o: src/language/language.cpp.o
 
-.PHONY : src/language/english/number_to_text_english.o
-
-# target to build an object file
-src/language/english/number_to_text_english.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/language/english/number_to_text_english.cpp.o
-.PHONY : src/language/english/number_to_text_english.cpp.o
-
-src/language/english/number_to_text_english.i: src/language/english/number_to_text_english.cpp.i
-
-.PHONY : src/language/english/number_to_text_english.i
-
-# target to preprocess a source file
-src/language/english/number_to_text_english.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/language/english/number_to_text_english.cpp.i
-.PHONY : src/language/english/number_to_text_english.cpp.i
-
-src/language/english/number_to_text_english.s: src/language/english/number_to_text_english.cpp.s
-
-.PHONY : src/language/english/number_to_text_english.s
-
-# target to generate assembly for a file
-src/language/english/number_to_text_english.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/language/english/number_to_text_english.cpp.s
-.PHONY : src/language/english/number_to_text_english.cpp.s
-
-src/language/number_to_text.o: src/language/number_to_text.cpp.o
-
-.PHONY : src/language/number_to_text.o
+.PHONY : src/language/language.o
 
 # target to build an object file
-src/language/number_to_text.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/language/number_to_text.cpp.o
-.PHONY : src/language/number_to_text.cpp.o
+src/language/language.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/language/language.cpp.o
+.PHONY : src/language/language.cpp.o
 
-src/language/number_to_text.i: src/language/number_to_text.cpp.i
+src/language/language.i: src/language/language.cpp.i
 
-.PHONY : src/language/number_to_text.i
+.PHONY : src/language/language.i
 
 # target to preprocess a source file
-src/language/number_to_text.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/language/number_to_text.cpp.i
-.PHONY : src/language/number_to_text.cpp.i
+src/language/language.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/language/language.cpp.i
+.PHONY : src/language/language.cpp.i
 
-src/language/number_to_text.s: src/language/number_to_text.cpp.s
+src/language/language.s: src/language/language.cpp.s
 
-.PHONY : src/language/number_to_text.s
+.PHONY : src/language/language.s
 
 # target to generate assembly for a file
-src/language/number_to_text.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/language/number_to_text.cpp.s
-.PHONY : src/language/number_to_text.cpp.s
+src/language/language.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/language/language.cpp.s
+.PHONY : src/language/language.cpp.s
 
-src/language_factory.o: src/language_factory.cpp.o
+src/language/vietnam/vietnamese.o: src/language/vietnam/vietnamese.cpp.o
 
-.PHONY : src/language_factory.o
+.PHONY : src/language/vietnam/vietnamese.o
 
 # target to build an object file
-src/language_factory.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/language_factory.cpp.o
-.PHONY : src/language_factory.cpp.o
+src/language/vietnam/vietnamese.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/language/vietnam/vietnamese.cpp.o
+.PHONY : src/language/vietnam/vietnamese.cpp.o
 
-src/language_factory.i: src/language_factory.cpp.i
+src/language/vietnam/vietnamese.i: src/language/vietnam/vietnamese.cpp.i
 
-.PHONY : src/language_factory.i
+.PHONY : src/language/vietnam/vietnamese.i
 
 # target to preprocess a source file
-src/language_factory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/language_factory.cpp.i
-.PHONY : src/language_factory.cpp.i
+src/language/vietnam/vietnamese.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/language/vietnam/vietnamese.cpp.i
+.PHONY : src/language/vietnam/vietnamese.cpp.i
 
-src/language_factory.s: src/language_factory.cpp.s
+src/language/vietnam/vietnamese.s: src/language/vietnam/vietnamese.cpp.s
 
-.PHONY : src/language_factory.s
+.PHONY : src/language/vietnam/vietnamese.s
 
 # target to generate assembly for a file
-src/language_factory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/language_factory.cpp.s
-.PHONY : src/language_factory.cpp.s
+src/language/vietnam/vietnamese.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/src/language/vietnam/vietnamese.cpp.s
+.PHONY : src/language/vietnam/vietnamese.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -313,21 +340,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... convert"
-	@echo "... src/language.o"
-	@echo "... src/language.i"
-	@echo "... src/language.s"
+	@echo "... src/convert/number_to_text.o"
+	@echo "... src/convert/number_to_text.i"
+	@echo "... src/convert/number_to_text.s"
+	@echo "... src/convert/number_to_text_english.o"
+	@echo "... src/convert/number_to_text_english.i"
+	@echo "... src/convert/number_to_text_english.s"
+	@echo "... src/factory/language_factory.o"
+	@echo "... src/factory/language_factory.i"
+	@echo "... src/factory/language_factory.s"
 	@echo "... src/language/english/english.o"
 	@echo "... src/language/english/english.i"
 	@echo "... src/language/english/english.s"
-	@echo "... src/language/english/number_to_text_english.o"
-	@echo "... src/language/english/number_to_text_english.i"
-	@echo "... src/language/english/number_to_text_english.s"
-	@echo "... src/language/number_to_text.o"
-	@echo "... src/language/number_to_text.i"
-	@echo "... src/language/number_to_text.s"
-	@echo "... src/language_factory.o"
-	@echo "... src/language_factory.i"
-	@echo "... src/language_factory.s"
+	@echo "... src/language/language.o"
+	@echo "... src/language/language.i"
+	@echo "... src/language/language.s"
+	@echo "... src/language/vietnam/vietnamese.o"
+	@echo "... src/language/vietnam/vietnamese.i"
+	@echo "... src/language/vietnam/vietnamese.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

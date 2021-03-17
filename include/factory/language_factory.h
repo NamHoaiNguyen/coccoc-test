@@ -1,8 +1,9 @@
 #ifndef language_factory
 #define language_factory
 
-#include "language.h"
-#include "language/english/english.h"
+#include "../language/language.h"
+#include "../language/english/english.h"
+#include "../language/vietnam/vietnamese.h"
 
 class LanguageFactory
 {

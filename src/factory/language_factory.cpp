@@ -1,4 +1,4 @@
-#include "../include/language_factory.h"
+#include "../../include/factory/language_factory.h"
  
 #include <iostream>
 
@@ -11,10 +11,11 @@ Language* LanguageFactory::createConnection(eConnectionType connectionType)
     case ENGLISH:
     {
         language = new English();
-        // English *e = dynamic_cast<English*>(language);
-        // English e;
-        // std::cout << "deo hieu "<< std::endl;
-        // std::cout << language->get_tens_eng(6) << std::endl;
+        break;
+    }
+    case VIETNAMESE:
+    {
+        language = new Vietnamese();
         break;
     }
     default:

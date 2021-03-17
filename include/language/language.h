@@ -13,11 +13,14 @@ enum eConnectionType
 
 class Language
 {
+
 public:
     Language();
-    virtual std::string get_tens_eng(int num);
-    virtual std::string get_less_than_20_eng(int num);
-    virtual std::string get_thousands_eng(int num);
+
+    virtual std::string get_tens(int num);
+    virtual std::string get_less_than_20(int num);
+    virtual std::string get_thousands(int num);
+    virtual std::string get_hundred();
 };
 
 #endif 
