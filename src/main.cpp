@@ -45,7 +45,6 @@ void get_input()
         while(true) {
             std::cout << "Use Default Language(English) ? (yes or no)" << std::endl;
             std::cin >> option;
-        
             /*Lowercase*/
             std::transform(option.begin(), option.end(), option.begin(), [](char c){return std::tolower(c) ;});
         
